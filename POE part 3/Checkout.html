@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Anita's Bakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <a href="Cart.html" style="color: #e91e63;"> - Back to Cart</a>
+    </header>
+
+     <main class="checkout container">
+        <section id="order-summary">
+            <h2>Your Order</h2>
+            <div id="checkout-items"></div>
+            <h3 id="checkout-total"></h3>
+        </section>
+
+        <section id="checkout-form-section">
+            <h2>Your Details</h2>
+            <form id="checkout-form">
+                <label>Name: </label>
+                <input type="text" id="name" required><br>
+
+                <label>Email: </label>
+                <input type="email" id="email" required><br>
+
+                <label>Address: </label>
+                <textarea id="address" required></textarea><br>
+
+                <button type="submit" class="checkout-btn">Place Order</button>
+            </form>
+        </section>
+     </main>
+
+     <script src="script.js"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', renderCheckoutPage);
+     </script>
+</body>
+</html>
